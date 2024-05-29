@@ -24,33 +24,252 @@
 .wrapper {
    max-width: 1920px;
    display: grid;
-   justify-content: flex-start;
+   align-items: center;
    padding: 0;
 }
 
 header {
-   width: 1920px;
-   height: 100px;
+   width: 100%;
    position: sticky;
    z-index: 1;
    background-color: #fff;
-   display: flex;
-   flex-wrap: nowrap;
-   align-items: center;
-   justify-content: space-around;
    padding-top: 7px;
-   padding-left: 77px;
-   padding-right: 39.9px;
    top: 0;
    left: 0;
    box-shadow: 0px 4px 26px 0px #00000017;
 
-   & img {
-      margin-right: 658px;
+   & .header-main-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      padding-left: 77px;
+      padding-right: 39.9px;
+      position: relative;
+      & img {
+         margin-right: 658px;
+      }
+
+      & .header-info {
+         font-family: "Calibri", sans-serif;
+         display: flex;
+         align-items: center;
+         font-size: 14px;
+         line-height: 17.9px;
+         color: #6b7073;
+
+         & .header-info-timetable {
+            display: flex;
+            justify-content: start;
+
+            & span {
+               margin: 0;
+               text-wrap: nowrap;
+            }
+
+            & .regime {
+               max-width: 115px;
+               display: grid;
+               margin-left: 6px;
+               height: 36.17px;
+            }
+         }
+
+         & span {
+            margin-left: 93px;
+         }
+
+         & .search-panel {
+            margin-left: 93px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 88px;
+            width: 268px;
+            height: 40.43px;
+            padding: 12.21px 12.26px;
+            box-shadow: 2px 4px 11px 0px #0000002b;
+
+            & input {
+               border: none;
+               outline: none;
+               max-width: 268px;
+               height: 40.43px;
+               font-family: "Calibri", sans-serif;
+               font-size: 12px;
+               font-weight: 400;
+               line-height: 14.65px;
+               text-align: left;
+            }
+
+            & i {
+               width: 15px;
+               height: 15.96px;
+            }
+         }
+
+         & .burger {
+            width: 33px;
+            height: 24px;
+            display: grid;
+            justify-items: flex-end;
+            margin-left: 177px;
+            cursor: pointer;
+
+            & span {
+               margin: 0;
+               background-color: #cd3b31;
+               width: 33px;
+               height: 4.14px;
+               border-radius: 6px;
+            }
+
+            & #second-line {
+               width: 18.07px;
+            }
+         }
+      }
+   }
+
+   & .header-menu-modal-wrapper {
+      display: flex;
+      padding-top: 19px;
+
+      & .header-menu-modal {
+         display: flex;
+
+         & h2 {
+            font-family: "Calibri", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29.3px;
+         }
+
+         & nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 80px;
+            margin-right: 67px;
+
+            & .header-menu-nav-list {
+               padding: 0;
+               list-style: none;
+               display: grid;
+               gap: 48px;
+               font-family: "Calibri", sans-serif;
+               font-size: 20px;
+               font-weight: 400;
+               line-height: 24.41px;
+            }
+         }
+
+         & img {
+            margin-bottom: 41px;
+            margin-right: 149px;
+         }
+
+         & .modal-shops {
+            width: 567px;
+            height: 495px;
+            padding: 0;
+            display: grid;
+            gap: 0;
+            margin-right: 35px;
+
+            & #shops-title {
+               height: 29px;
+               margin-bottom: 5px;
+            }
+
+            & .modal-shops-list {
+               position: relative;
+               display: flex;
+               gap: 30px;
+               & ul {
+                  list-style: none;
+                  padding: 0;
+                  width: 269px;
+                  height: 432px;
+
+                  & li {
+                     font-family: "Calibri", sans-serif;
+                     font-size: 16px;
+                     font-weight: 400;
+                     line-height: 40.49px;
+                     margin-bottom: 15px;
+                  }
+               }
+            }
+         }
+
+         & .cafee-and-restorans {
+            margin-right: 51px;
+            width: 242px;
+            height: 271px;
+
+            & ul {
+               list-style: none;
+               padding: 0;
+               width: 269px;
+               height: 432px;
+
+               & li {
+                  font-family: "Calibri", sans-serif;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 40.49px;
+                  margin-bottom: 15px;
+               }
+            }
+         }
+
+         & .services {
+            margin-right: 32px;
+            width: 269px;
+            height: 383px;
+
+            & ul {
+               list-style: none;
+               padding: 0;
+               width: 269px;
+               height: 432px;
+
+               & li {
+                  font-family: "Calibri", sans-serif;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 40.49px;
+                  margin-bottom: 15px;
+               }
+            }
+         }
+
+         & .entertainment {
+            width: 267px;
+            height: 271px;
+
+            & ul {
+               list-style: none;
+               padding: 0;
+               width: 269px;
+               height: 432px;
+
+               & li {
+                  font-family: "Calibri", sans-serif;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 40.49px;
+                  margin-bottom: 15px;
+               }
+            }
+         }
+      }
    }
 }
 
-.header-info {
+/*.header-info {
    font-family: "Calibri", sans-serif;
    display: flex;
    align-items: center;
@@ -128,7 +347,7 @@ header {
          width: 18.07px;
       }
    }
-}
+}*/
 
 .main {
    padding-top: 29px;
