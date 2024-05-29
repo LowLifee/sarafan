@@ -1,0 +1,463 @@
+* {
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: "Calibri";
+   src: url("./fonts/calibri.ttf");
+}
+
+@font-face {
+   font-family: "Calibri-bold";
+   src: url("./fonts/calibri_bold.ttf");
+}
+
+.section-title {
+   font-family: "Calibri", sans-serif;
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 58.59px;
+   margin: 0;
+   margin-bottom: 24px;
+}
+
+.wrapper {
+   max-width: 1920px;
+   display: grid;
+   justify-content: flex-start;
+   padding: 0;
+}
+
+header {
+   width: 1920px;
+   height: 100px;
+   position: sticky;
+   z-index: 1;
+   background-color: #fff;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-around;
+   padding-top: 7px;
+   padding-left: 77px;
+   padding-right: 39.9px;
+   top: 0;
+   left: 0;
+   box-shadow: 0px 4px 26px 0px #00000017;
+
+   & img {
+      margin-right: 658px;
+   }
+}
+
+.header-info {
+   font-family: "Calibri", sans-serif;
+   display: flex;
+   align-items: center;
+   font-size: 14px;
+   line-height: 17.9px;
+   color: #6b7073;
+
+   & .header-info-timetable {
+      display: flex;
+      justify-content: start;
+
+      & span {
+         margin: 0;
+         text-wrap: nowrap;
+      }
+
+      & .regime {
+         max-width: 115px;
+         display: grid;
+         margin-left: 6px;
+         height: 36.17px;
+      }
+   }
+
+   & span {
+      margin-left: 93px;
+   }
+
+   & .search-panel {
+      margin-left: 93px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 88px;
+      width: 268px;
+      height: 40.43px;
+      padding: 12.21px 12.26px;
+      box-shadow: 2px 4px 11px 0px #0000002b;
+
+      & input {
+         border: none;
+         outline: none;
+         max-width: 268px;
+         height: 40.43px;
+         font-family: "Calibri", sans-serif;
+         font-size: 12px;
+         font-weight: 400;
+         line-height: 14.65px;
+         text-align: left;
+      }
+
+      & i {
+         width: 15px;
+         height: 15.96px;
+      }
+   }
+
+   & .burger {
+      width: 33px;
+      height: 24px;
+      display: grid;
+      justify-items: flex-end;
+      margin-left: 177px;
+      cursor: pointer;
+
+      & span {
+         margin: 0;
+         background-color: #cd3b31;
+         width: 33px;
+         height: 4.14px;
+         border-radius: 6px;
+      }
+
+      & #second-line {
+         width: 18.07px;
+      }
+   }
+}
+
+.main {
+   padding-top: 29px;
+   padding-left: 79px;
+   padding-right: 80px;
+   width: 1761px;
+   margin: 0 auto;
+   display: grid;
+   margin-bottom: 91px;
+
+   & .router {
+      width: 115px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      line-height: 17.9px;
+      color: #6b7073;
+      font-family: "Calibri", sans-serif;
+
+      & #main-router {
+         color: #c4c4c4;
+      }
+   }
+
+   & .about-us {
+      padding-top: 20px;
+      width: 1761px;
+      max-height: 637px;
+      display: flex;
+      font-family: "Calibri", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.09px;
+
+      & img {
+         height: 637px;
+      }
+
+      & .about-us-description {
+         width: 697px;
+         max-height: 637px;
+         display: grid;
+         align-content: flex-start;
+         padding-left: 29px;
+         padding-top: 0;
+
+         & .about-us-text {
+            max-width: 567px;
+            max-height: 24px;
+            margin-bottom: 34px;
+         }
+
+         & .download-presentation {
+            display: flex;
+            align-items: center;
+            gap: 15.33px;
+            margin-bottom: 67px;
+            & img {
+               width: 21.33px;
+               height: 21.33px;
+            }
+
+            & h2 {
+               font-family: "Calibri", sans-serif;
+               font-size: 24px;
+               font-weight: 400;
+               line-height: 29.3px;
+            }
+         }
+
+         & #advantage-title {
+            margin-bottom: 34px;
+         }
+
+         ul {
+            display: grid;
+            gap: 10px;
+            justify-content: flex-start;
+            padding: 0;
+            margin-bottom: 52px;
+            & li {
+               list-style: none;
+               display: flex;
+               align-items: baseline;
+               text-align: left;
+
+               & img {
+                  width: 6px;
+                  height: 6px;
+                  margin-right: 7px;
+               }
+
+               & span {
+                  max-width: 553px;
+               }
+            }
+         }
+      }
+   }
+
+   & .clients {
+      padding-top: 80px;
+      display: grid;
+      justify-content: start;
+      max-width: 1731px;
+      max-height: 289px;
+
+      & .clients-shops {
+         display: flex;
+         gap: 30px;
+
+         & .shops-image {
+            display: grid;
+            gap: 30px;
+            justify-items: center;
+            max-width: 1012px;
+
+            & .images {
+               display: flex;
+               gap: 46px;
+
+               & #violet {
+                  width: 306px;
+                  height: 153px;
+               }
+
+               & #letual {
+                  width: 307px;
+                  height: 153px;
+               }
+
+               & #letual {
+                  width: 307px;
+                  height: 152px;
+               }
+            }
+
+            & .images-pagination {
+               max-width: 675px;
+               display: flex;
+               gap: 14px;
+               cursor: pointer;
+
+               & .dots {
+                  display: flex;
+                  gap: 14px;
+                  justify-items: center;
+                  align-items: center;
+
+                  & span {
+                     width: 6px;
+                     height: 6px;
+                     border-radius: 50px;
+                     background-color: #6b707380;
+                     cursor: pointer;
+                  }
+
+                  & .active {
+                     width: 9px;
+                     height: 9px;
+                     background-color: #6b7073;
+                  }
+               }
+            }
+         }
+
+         & .shops-names {
+            font-family: "Calibri", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.09px;
+
+            & ul {
+               padding: 0;
+               display: grid;
+               gap: 10px;
+               & li {
+                  list-style: none;
+                  display: flex;
+                  align-items: baseline;
+
+                  & img {
+                     width: 6px;
+                     height: 6px;
+                     margin-right: 7px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   & .adress {
+      padding-top: 140px;
+      display: grid;
+      gap: 60px;
+
+      & .shops-examples-part1 {
+         display: flex;
+         gap: 105px;
+         flex-wrap: nowrap;
+         height: 508px;
+
+         & .squre-info {
+            height: 508px;
+
+            & ul {
+               width: 191px;
+               height: 449px;
+               padding: 0;
+               margin-right: 75px;
+               margin-top: 30px;
+               display: grid;
+               gap: 39px;
+               & li {
+                  list-style: none;
+                  height: 83px;
+
+                  & span {
+                     font-family: "Calibri", sans-serif;
+                     font-size: 14px;
+                     font-weight: 400;
+                     line-height: 17.09px;
+                     color: #6b7073;
+                  }
+
+                  & h2 {
+                     font-family: "Calibri", sans-serif;
+                     font-size: 36px;
+                     font-weight: 700;
+                     line-height: 43.95px;
+                  }
+               }
+            }
+         }
+
+         & .shops-images {
+            display: flex;
+            gap: 30px;
+         }
+      }
+
+      & .shops-examples-part2 {
+         height: 359px;
+         display: flex;
+         gap: 31px;
+      }
+   }
+}
+
+footer {
+   display: flex;
+   padding: 0;
+   padding-top: 41px;
+   padding-left: 80px;
+   width: 1920px;
+   margin: 0 auto;
+   box-shadow: 0px 1px 44px 0px #0000001f;
+
+   & .logo {
+      width: 170px;
+      height: 147px;
+      margin-left: 80px;
+   }
+   & .footer-lists {
+      display: flex;
+      gap: 130px;
+      margin-left: 128px;
+
+      & .footer-contacts {
+         padding: 0;
+         list-style: none;
+         font-family: "Calibri", sans-serif;
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 17.09px;
+         display: grid;
+      }
+   }
+
+   & .footer-search-panel {
+      display: grid;
+      gap: 54px;
+      margin-left: 239px;
+
+      & .search-panel {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         border-radius: 88px;
+         width: 268px;
+         height: 40.43px;
+         padding: 12.21px 12.26px;
+         box-shadow: 2px 4px 11px 0px #0000002b;
+
+         & input {
+            border: none;
+            outline: none;
+         }
+      }
+
+      & .messengers-icon {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 21.76px;
+         width: 95.76px;
+         height: 37px;
+
+         & #tg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 37px;
+            height: 37px;
+            background-color: #e4e4e4;
+            border-radius: 50%;
+         }
+
+         & #vk {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 37px;
+            height: 37px;
+            background-color: #e4e4e4;
+            border-radius: 50%;
+         }
+      }
+   }
+}
