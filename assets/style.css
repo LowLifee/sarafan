@@ -22,15 +22,16 @@
 }
 
 .wrapper {
-   max-width: 1920px;
+   width: 1920px;
    display: grid;
-   align-items: center;
    padding: 0;
+   justify-items: center;
+   overflow-x: hidden;
 }
 
 header {
-   width: 100%;
-   position: sticky;
+   width: 1920px;
+   position: fixed;
    z-index: 1;
    background-color: #fff;
    padding-top: 7px;
@@ -116,6 +117,9 @@ header {
             justify-items: flex-end;
             margin-left: 177px;
             cursor: pointer;
+            transition:
+               all,
+               0.5s ease-in-out;
 
             & span {
                margin: 0;
@@ -138,6 +142,9 @@ header {
 
       & .header-menu-modal {
          display: flex;
+         height: 0;
+         transition: all 5s ease-in-out;
+         background-color: transparent;
 
          & h2 {
             font-family: "Calibri", sans-serif;
@@ -148,7 +155,7 @@ header {
 
          & nav {
             display: flex;
-            align-items: center;
+            align-items: start;
             justify-content: center;
             padding-left: 80px;
             margin-right: 67px;
@@ -269,86 +276,6 @@ header {
    }
 }
 
-/*.header-info {
-   font-family: "Calibri", sans-serif;
-   display: flex;
-   align-items: center;
-   font-size: 14px;
-   line-height: 17.9px;
-   color: #6b7073;
-
-   & .header-info-timetable {
-      display: flex;
-      justify-content: start;
-
-      & span {
-         margin: 0;
-         text-wrap: nowrap;
-      }
-
-      & .regime {
-         max-width: 115px;
-         display: grid;
-         margin-left: 6px;
-         height: 36.17px;
-      }
-   }
-
-   & span {
-      margin-left: 93px;
-   }
-
-   & .search-panel {
-      margin-left: 93px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-radius: 88px;
-      width: 268px;
-      height: 40.43px;
-      padding: 12.21px 12.26px;
-      box-shadow: 2px 4px 11px 0px #0000002b;
-
-      & input {
-         border: none;
-         outline: none;
-         max-width: 268px;
-         height: 40.43px;
-         font-family: "Calibri", sans-serif;
-         font-size: 12px;
-         font-weight: 400;
-         line-height: 14.65px;
-         text-align: left;
-      }
-
-      & i {
-         width: 15px;
-         height: 15.96px;
-      }
-   }
-
-   & .burger {
-      width: 33px;
-      height: 24px;
-      display: grid;
-      justify-items: flex-end;
-      margin-left: 177px;
-      cursor: pointer;
-
-      & span {
-         margin: 0;
-         background-color: #cd3b31;
-         width: 33px;
-         height: 4.14px;
-         border-radius: 6px;
-      }
-
-      & #second-line {
-         width: 18.07px;
-      }
-   }
-}*/
-
 .main {
    padding-top: 29px;
    padding-left: 79px;
@@ -409,6 +336,7 @@ header {
             & img {
                width: 21.33px;
                height: 21.33px;
+               cursor: pointer;
             }
 
             & h2 {
